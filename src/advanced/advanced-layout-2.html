@@ -7,6 +7,36 @@
     <link rel="stylesheet" href="../style.css" />
     <style>
       /* Doe hier jouw ding! */
+
+      body {
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: 1fr 1fr 1fr 1fr;
+          grid-template-areas:
+          "nav"
+          "header"
+          "main"
+          "footer";
+          gap: 0.5em;
+        }
+        
+        header {
+          grid-area: header;
+          transform: rotate(-45deg);
+        }
+
+        nav {
+          grid-area: nav;
+          transform: rotate(45deg);
+        }
+
+        main {
+          grid-area: main;
+        }
+
+        footer {
+          grid-area: footer;
+        } 
     </style>
   </head>
   <body id="advanced-layout-2">
